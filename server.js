@@ -1,9 +1,9 @@
 var express = require('express');
 var razor   = require('kally-razor');
-var home    = require('./src/controllers/home.js')({ dirname: __dirname });
+var Home    = require('./src/controllers/home.js');
 
 var app     = express();
-
+var home    = new Home({ dirname: __dirname })
 app.set('port', process.env.PORT || 1337);
 
 app.use(express.favicon());
