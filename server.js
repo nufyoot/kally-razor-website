@@ -1,6 +1,6 @@
 var express = require('express');
 var razor   = require('kally-razor');
-var home    = require('./src/controllers/home.js');
+var home    = require('./src/controllers/home.js')({ dirname: __dirname });
 
 var app     = express();
 
