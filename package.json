@@ -2,7 +2,7 @@
   "name": "kally-razor-website",
   "version": "0.1.0",
   "description": "KallyRazor Website",
-  "main": "application.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/nufyoot/kally-razor-website.git"
