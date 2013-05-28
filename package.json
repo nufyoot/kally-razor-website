@@ -13,6 +13,6 @@
   },
   "author": "Terry Tice <nufyoot@gmail.com>",
   "engines": {
-    "node": "0.10.x"
+    "node": "0.8.2"
   }
 }
