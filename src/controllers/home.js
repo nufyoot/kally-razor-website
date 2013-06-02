@@ -2,17 +2,10 @@ var KallyRazor  = require('kally-razor');
 var path        = require('path');
 
 module.exports = function (config) {
-    if (path.sep == '/') {
-        var razor = new KallyRazor({
-            root: config.dirname + '/src/views/home',
-            layout: config.dirname + '/src/views/shared/_layout.html'
-        });
-    } else {
-        var razor = new KallyRazor({
-            root: config.dirname + '\\src\\views\\home',
-            layout: config.dirname + '\\src\\views\\shared\\_layout.html'
-        });
-    }
+    var razor = new KallyRazor({
+        root: path.normalize(__dirname + '/../views/home'),
+        layout: path.normalize(__dirname + '/../views/shared/_layout.html')
+    });
 
     return {
         index: function (req, res) {
