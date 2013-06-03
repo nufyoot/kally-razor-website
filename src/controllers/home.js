@@ -3,17 +3,17 @@ var path        = require('path');
 
 module.exports = function (config) {
     var razor = new KallyRazor({
-        root: path.normalize(path.join(__dirname, '..', 'views', 'home')),
-        layout: path.normalize(path.join(__dirname, '..', 'views', 'shared', '_layout.html'))
+        root: path.normalize(path.join(__dirname, '..', 'views')),
+        layout: path.join('shared', '_layout.html')
     });
 
     return {
         index: function (req, res) {
-            res.send(razor.render('index.html', { activeTab: 'home' }));
+            res.send(razor.render(path.join('home', 'index.html'), { activeTab: 'home' }));
         },
 
         about: function (req, res) {
-            res.send(razor.render('about.html', { activeTab: 'about' }));
+            res.send(razor.render(path.join('home', 'about.html'), { activeTab: 'about' }));
         }
     };
 };
