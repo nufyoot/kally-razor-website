@@ -3,8 +3,8 @@ var path        = require('path');
 
 module.exports = function (config) {
     var razor = new KallyRazor({
-        root: path.normalize(__dirname + '/../views/home'),
-        layout: path.normalize(__dirname + '/../views/shared/_layout.html')
+        root: path.normalize(path.join(__dirname, '..', 'views', 'home')),
+        layout: path.normalize(path.join(__dirname, '..', 'views', 'shared', '_layout.html'))
     });
 
     return {
