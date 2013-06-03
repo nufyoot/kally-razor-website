@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "express": "3.x",
-    "kally-razor": "0.3.7"
+    "kally-razor": "0.3.8"
   },
   "author": "Terry Tice <nufyoot@gmail.com>",
   "engines": {
