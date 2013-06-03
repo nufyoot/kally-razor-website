@@ -7,16 +7,13 @@
     "type": "git",
     "url": "git://github.com/nufyoot/kally-razor-website.git"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
-  },
   "dependencies": {
     "express": "3.x",
     "kally-razor": "0.3.8"
   },
   "author": "Terry Tice <nufyoot@gmail.com>",
   "engines": {
-    "node": "0.8.2"
+    "node": "0.10.x",
+    "npm": "1.2.x"
   }
 }
